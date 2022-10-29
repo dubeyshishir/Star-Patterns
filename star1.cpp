@@ -3,17 +3,24 @@ using namespace std;
 
 int main()
 {
-    int i,j;
-    for(i=1;i<=5;i++)
+    int gaps, lines, i, k;
+
+    cout <<"Enter number of lines: ";
+    cin >> lines;
+
+    for(i = 1, k = 0; i <= rows; ++i, k = 0)
     {
-       for(j=1;j<=9;j++)
-       {
-          if(j>=6-1 && j<=4+i)
-            cout<<"*";
-          else
-            cout<<" ";
-       }
-       cout<<"\n";
-    }
+        for(gaps = 1; s <= lines-i; ++gaps)
+        {
+            cout <<"  ";
+        }
+
+        while(k != 2*i-1)
+        {
+            cout << "* ";
+            ++k;
+        }
+        cout << endl;
+    }   
     return 0;
 }
