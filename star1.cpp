@@ -15,10 +15,10 @@ int main()
             cout <<"  ";
         }
 
-        while(k != 2*i-1)
+        while(k != (2*i)-1)
         {
             cout << "* ";
-            ++k;
+            k++;
         }
         cout << endl;
     }   
